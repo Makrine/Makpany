@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" type="text/css" href="countdown.css"/>
+    <script type="text/javascript" src="countdown.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+
+<body>
+    <h1 class="txt">Countdown Timer!</h1>
+    <div class="timer">
+    <p class="txt"> Please enter a date, its name and click the show button to see the remaining time until that desired date!</p>
+    <div class="sel_date">
+        <p>Select a date:<input id="input_date" type="date"></p>
+    </div>
+    <div class="name">
+        Enter a date name:<input id="name" type="text">
+    </div>
+    </br></br>
+    <button id='calculate' onclick="calculate()">Show!</button>
+    </br></br>
+    <p id="until"></p>
+    <p id="date_name"></p>
+    <p id="res">
+        <span id="day"></span>
+        <span id="hrs"></span>
+        <span id="min"></span>
+        <span id="sec"></span>
+    </p>
+    <p id="is_left"></p>
+    </div>
+</body>
+</html>

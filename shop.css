@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'menufont';
+    src: url('fonts/MenuFont.otf');
+}
+
+body {
+background-color: #b4c7d6;
+}
+
+#left {
+    width: 35%;
+    float: left;
+}
+
+#right {
+    margin-left: 35%;
+}
+.clear {
+    clear: both;
+}
+
+img {
+    z-index: -1;
+    display: block;
+    border-radius: 1em;
+    width: 80%;
+}
+
+
+.firstline, .secondline, .thirdline{
+    display: flex;
+}
+.pants, .bat, .tooth,
+.presentama, .device, .happiness,
+.mask, .uglo, .diploma
+{
+    
+    flex: 1;
+    position: relative;
+} 
+#maskprice, #ugloprice, #diplomaprice, #presentamaprice, #deviceprice, #happinessprice,
+#pantsprice, #batprice, #toothprice {
+    margin-left: 25%;
+}
+
+.overlay {
+    z-index: 1;
+    border-radius: 1em;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 85%;
+    height: 130%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #e0f38d;  
+}
+
+.text {
+    font-weight: bold;
+    font-family: 'menufont';
+    color: rgb(139, 11, 11);
+    font-size: 75%;
+    position: absolute;
+    top: 20%;
+    left: 57%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 95%;
+    
+}
+.bat:hover .overlay,
+.tooth:hover .overlay,
+.pants:hover .overlay,
+.mask:hover .overlay,
+.uglo:hover .overlay,
+.diploma:hover .overlay,
+.presentama:hover .overlay,
+.device:hover .overlay,
+.happiness:hover .overlay
+{
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+    transition-duration: .5s ease;
+    opacity: 1;
+}
+
+.price {
+/*    outline-style: double;
+    outline-width: 0.02em;
+    -webkit-outline-radius: 2em;
+    -moz-outline-radius: 2em;*/
+    position: absolute;
+    background-color: pink;
+    border-radius: 2em;
+    margin-left: -75%;
+    margin-top: -30%;
+    width: 60%;
+    padding: 8%;
+}
+button {
+    font-size: 60%;
+
+}
+#old{
+    text-align: center;
+    color: red;
+}
+.pr {
+    font-weight: bold;
+    color: green;
+}
+
+button.buy {
+    font-size: 100%;
+}
+.desc{
+    margin-top: 30%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 80%;
+    color: rgb(50, 99, 44);
+    margin-left: 9%;
+}
+
+.desc2{
+    margin-top: 50%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 80%;
+    color: rgb(50, 99, 44);
+    margin-left: 10%;
+}
+.cart_container{
+/*    outline-style: dotted;
+    -webkit-outline-radius: 2em;
+    -moz-outline-radius: 2em;*/
+    background-color: #8be76e;
+    border-radius: 2em;
+    width: 50%;
+    padding: 5%;
+}
+.cart {
+/*    outline: none; */
+    width: 40%;
+    margin-left: 5%;
+}
+#cart, #res {
+    font-family: 'menufont';
+    font-size: 150%;
+    margin-left: 5%;
+    font-weight: bold;
+}
+.rev{
+/*    outline-style: dotted;
+    -webkit-outline-radius: 2em;
+    -moz-outline-radius: 2em;*/
+    background-color: #a7ee91;
+    border-radius: 2em;
+    width: 50%;
+    padding: 5%;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+h2 {
+    font-family: 'menufont';
+    font-style: normal;
+}
+#products {
+    font-family: 'menufont';
+    font-size: 200%;
+    font-weight: bolder;
+    color: #074d18;
+}
+
+@media screen and (max-width: 880px) {
+   
+    .firstline, .secondline, .thirdline{
+        display: block;
+    }
+    .overlay {
+        z-index: 1;
+        border-radius: 1em;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 15%;
+        right: 0;
+        width: 50%;
+        height: 76%;
+        opacity: 0;
+        font-size: 2vw;
+        transition: .5s ease;
+        background-color: #e0f38d;  
+    }
+}

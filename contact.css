@@ -1,0 +1,209 @@
+body {
+    background-color: #b4c7d6;
+}
+#name, #mail {
+    width: 35%;
+}
+.cont_em_txt {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(18, 88, 83);
+}
+h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(52, 134, 172);
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(28, 136, 127);
+}
+
+* {
+    box-sizing: border-box;
+}
+  
+.column {
+    float: left;
+    width: 50%;
+    padding: 1%;
+}
+
+.row {
+    margin-left: 18%;
+}
+  
+.row:after {
+    display: table;
+    clear: both;
+}
+
+
+.map {
+    border-radius: 2em;
+    width: 72%;
+    position: relative;
+    min-width: 5rem;
+}
+.pin1 {
+    width: 15%;
+    position: absolute;
+    top: 60%;
+    left: 45%;
+}
+
+.address1 {
+    display: none;
+    color: #fff;
+    float: left;
+    padding: 20%;
+    margin: 10%;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+.pin1:hover .address1 {
+    border-radius: 0.1rem 2rem 2rem 2rem;
+    background: orange;
+    min-width: 5rem;
+    position: absolute;
+    margin-top: 0rem;
+    left: 2.5rem;
+    display: block;
+}
+
+.pin2 {
+    width: 15%;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+.address2 {
+    display: none;
+    color: #fff;
+    float: left;
+    padding: 20%;
+    margin: 10%;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+.pin2:hover .address2 {
+    border-radius: 0.1rem 2rem 2rem 2rem;
+    background: orange;
+    min-width: 5rem;
+    position: absolute;
+    margin-top: 0rem;
+    left: 2.5rem;
+    display: block;
+}
+
+
+.pin3 {
+    width: 15%;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+}
+
+.address3 {
+    display: none;
+    color: #fff;
+    float: left;
+    padding: 20%;
+    margin: -10%;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+.pin3:hover .address3 {
+    border-radius: 0.1rem 2rem 2rem 2rem;
+    background: orange;
+    min-width: 5rem;
+    position: absolute;
+    margin-top: 0rem;
+    left: 2.5rem;
+    display: block;
+}
+
+.pin4 {
+    width: 15%;
+    position: absolute;
+    top: 45%;
+    left: 20%;
+}
+
+.address4 {
+    display: none;
+    color: #fff;
+    float: left;
+    padding: 20%;
+    margin: -10%;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+.pin4:hover .address4 {
+    border-radius: 0.1rem 2rem 2rem 2rem;
+    background: orange;
+    min-width: 5rem;
+    position: absolute;
+    margin-top: 0rem;
+    left: 2.5rem;
+    display: block;
+}
+
+.pin5 {
+    width: 15%;
+    position: absolute;
+    top: 15%;
+    left: 40%;
+}
+
+.address5 {
+    display: none;
+    color: #fff;
+    float: left;
+    padding: 20%;
+    margin: 10%;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+.pin5:hover .address5 {
+    border-radius: 0.1rem 2rem 2rem 2rem;
+    background: orange;
+    min-width: 5rem;
+    position: absolute;
+    margin-top: 0rem;
+    left: 2.5rem;
+    display: block;
+}
+
+@media screen and (max-width: 880px) {
+    h1 {
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        color: rgb(52, 134, 172);
+        font-size: 5vw;
+        margin-top: 10vw;
+    }
+
+    .column {
+        width: 50%;
+    }
+    * {
+        box-sizing: content-box;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    h1 {
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        color: rgb(52, 134, 172);
+        font-size: 5vw;
+        margin-top: 30vw;
+    }
+}

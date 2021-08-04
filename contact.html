@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="contact.css"/>
+    <script type="text/javascript" src="contact.js"></script>
+</head>
+<body>
+    
+    <h1>Contact us!</h1>
+    <div class="row">
+        <div class="column">
+            <h2>Send an email!</h2>
+            <form method="post" enctype="text/plain">
+            <label for="name" class="cont_em_txt">Name:</label>
+            <input type="text" name="name" id="name" placeholder="John Doe"><br>
+            <br><label for="mail" class="cont_em_txt">E-mail:</label>
+            <input type="text" name="mail" id="mail" placeholder="someone@gmail.com"><br>
+            <br><label for="txt" class="cont_em_txt">Text:</label><br>
+            <textarea id="txt" name="txt" rows="10" cols="50" placeholder="Write text here" wrap="hard"></textarea>
+            </br>
+            <input type="submit" value="Send" onclick="notif()">
+            </form>
+        </div>
+        <div class="column">
+            <h2>Find us on a map!</h2>
+            <div class="map"> <img src="pics/map.png" class="map">
+                <div class="pin1"><img src="pics/pin.png" class="pin1">
+                    <div class="address1">28 The Main str., 00010 Mackital City, Mackiland</div>
+               </div>
+
+                <div class="pin2"><img src="pics/pin.png" class="pin2">
+                    <div class="address2">51 What A Street, 13280 Pigeon City, Mackiland</div>
+                </div>
+
+                <div class="pin3"><img src="pics/pin.png" class="pin3">
+                    <div class="address3">12 The Heaven str., 10400 Paradasia, Mackiland</div>
+               </div>
+
+                <div class="pin4"><img src="pics/pin.png" class="pin4">
+                    <div class="address4">3 The Lonely Street, 19380 Sadia, Mackiland</div>
+                </div>
+
+                <div class="pin5"><img src="pics/pin.png" class="pin5">
+                    <div class="address5">404 The Unknown Street, 19380 Untitled, Mackiland</div>
+                </div>
+
+            </div>
+        </div>
+      </div>
+
+</body>
+</html>

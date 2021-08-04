@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="shop.css"/>
+        <script type="text/javascript" src="shop.js"></script>
+    </head>
+    <body>
+        <br><br>
+        <div id="container">
+            <div id="left">
+                <div class="cart_container">
+                    <img class="cart" src="pics/cart.png">
+                    <span id="cart">Cart: </span>
+                    <span id="res">0 Leaves</span><br><br>
+                    <button class="buy" onclick="buy()">Buy</button>
+                    <button class="buy" onclick="del()">Clear</button>
+                </div>
+                <br><br>
+                <div class="rev">
+                    <h2>Reviews:</h2>
+                    <p id="rev">"This shop is fantastic! I feel like I really exist!" ~ Santa Claus</p>
+	                <p id="rev">"The Frendohear is just amazing! Even my real friend's psychiatrist is talking to me now!" ~ Sarah, an imaginary friend</p>
+                    <p id="rev">"Thanks to Makpany now I have a university diploma! I could never even imagine that!" ~ Anonymous</p>
+                    <p id="rev">"Last year most of my ants died because of the cold weather. This year I bought them warm pants and they are feeling so well! Thanks Makpany!" ~ Jack, mutant ants keeper</p>
+                    <p id="rev">"Presentama is what I needed in life! Much better than Futurama!" ~ Makrine</p>
+                </div>
+            </div>
+
+            <div id="right">
+
+                <br>
+            <span id="products">Products:</span>
+            <br><br><br>
+            <div class="firstline">
+                <div class="mask">
+                    <img src="pics/facemask.png" class="mask">
+                    <div class="overlay">
+                        <div id="mask" class="text">Face Mask For Your Imaginary Friend</div>
+                        <div class="desc">Don't let your imaginary friends be defenceless against COVID-19! Buy them some face masks too!</div>
+                        <div class="price">
+                            <span id="old"><del>5 Leaves</del></span><br>
+                            <span id="maskprice" class="pr">7</span><span class="pr"> Leaves</span>
+                            <button id="mask" onclick="cart(document.getElementById('maskprice')),notif(document.getElementById('mask'))">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uglo">
+                    <img src="pics/Uglo.png">
+                    <div class="overlay">
+                        <div id="uglo" class="text">3 Thoughts About Life from Uglo</div>
+                        <div class="desc">Confused and stressed? Get some thoughts about life from Uglo and cheer up!</div>
+                        <div class="price">
+                            <span id="old"><del>8 Leaves</del></span><br>
+                            <span id="ugloprice" class="pr">10</span><span class="pr"> Leaves</span>
+                            <button id="uglo" onclick="cart(document.getElementById('ugloprice')),notif(document.getElementById('uglo'))">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="diploma">
+                    <img src="pics/diploma.png">
+                    <div class="overlay">
+                        <div id="diploma" class="text">Your Uni Diploma</div>
+                        <div class="desc">Still dreaming about getting a Bachelor degree? Stop! Buy it NOW!</div>
+                        <div class="price">
+                            <span id="diplomaprice" class="pr">50</span><span class="pr"> Leaves</span>
+                            <button id="diploma" onclick="cart(document.getElementById('diplomaprice')),notif(document.getElementById('diploma'))">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <br><br><br>
+            <div class="secondline">
+   
+
+
+                <div class="presentama">
+                    <img src="pics/presentama.png">
+                    <div class="overlay">
+                        <div id="presentama" class="text">Presentama</div>
+                        <div class="desc2">Bored? BUY and watch Presentama! Uglo totally loves it! It's about the present life where there is some weird pandemic and people have to wear masks! Crazy, eh?</div>
+                        <div class="price">
+                            <span id="presentamaprice" class="pr">25</span><span class="pr"> Leaves</span>
+                            <button id="presentama" onclick="cart(document.getElementById('presentamaprice')),notif(document.getElementById('presentama'))">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="device">
+                    <img src="pics/device.png">
+                    <div class="overlay">
+                        <div id="device" class="text">Frendohear</div>
+                        <div class="desc2">You don't have to worry about real people not understanding you when you talk to your imaginary friend. Frendohear lets the strange real people hear your imaginary friend! Why not opt for buying it NOW?</div>
+                        <div class="price">
+                            <span id="deviceprice" class="pr">65</span><span class="pr"> Leaves</span>
+                            <button id="device" onclick="cart(document.getElementById('deviceprice')),notif(document.getElementById('device'))">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="happiness">
+                    <img src="pics/happiness.png">
+                    <div class="overlay">
+                        <div id="happiness" class="text">Happiness</div>
+                        <div class="desc2">Who said you can't buy happiness? Buy it and we will be very happy!</div>
+                        <div class="price">
+                            <span id="happinessprice" class="pr">100</span><span class="pr"> Leaves</span>
+                            <button id="happiness" onclick="cart(document.getElementById('happinessprice')),notif(document.getElementById('happiness'))">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+            <br><br><br>
+            <div class="thirdline">
+   
+
+
+                <div class="pants">
+                    <img src="pics/pants.png">
+                    <div class="overlay">
+                        <div id="pants" class="text">Pants For Ants</div>
+                        <div class="desc">Super trendy pants for ants! 100% cotton! Keep their bottoms warm this winter!</div>
+                        <div class="price">   
+                            <span id="pantsprice" class="pr">15</span><span class="pr">Leaves</span>
+                            <button id="pants" onclick="cart(document.getElementById('pantsprice')),notif(document.getElementById('pants'))">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bat">
+                    <img src="pics/bat.png">
+                    <div class="overlay">
+                        <div id="bat" class="text">Sunglasses For Bats</div>
+                        <div class="desc">Now bats will be cool too! Make a bat happy - buy it cool sunglasses!</div>
+                        <div class="price">
+                            <span id="batprice" class="pr">20</span><span class="pr"> Leaves</span>
+                            <button id="bat" onclick="cart(document.getElementById('batprice')),notif(document.getElementById('bat'))">Add To Cart</button>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="tooth">
+                    <img src="pics/tooth.png">
+                    <div class="overlay">
+                        <div id="tooth" class="text">A Wisdom Tooth Of An Alien</div>
+                        <div class="desc">They say aliens have great teeth. And great hearts too as they are happy to donate their teeth! (That's just some alien kid being so happy he donated a tooth that he cries)</div>
+                        <div class="price">
+                            <span id="toothprice" class="pr">45</span><span class="pr"> Leaves</span>
+                            <button id="tooth" onclick="cart(document.getElementById('toothprice')),notif(document.getElementById('tooth'))">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>              
+
+            </div>
+            <br><br><br>
+            </div>
+            <div class="clear"></div>
+          </div>
+    </body>
+</html>

@@ -1,0 +1,72 @@
+body {
+    background-color: #b4c7d6;
+}
+
+.timer {
+    margin-left: -5%;
+}
+
+.sel_date, .name {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 85%;
+    color: rgb(43, 66, 196);
+    margin-left: 38%;
+
+    border-radius: 2em;
+    background: #0dce64;
+    width: 28%;
+    height: 10%;
+    line-height: 2em;
+    text-align: center;
+    box-shadow: 10px 10px 8px #888888;
+}
+.sel_date {
+    margin-top: 8%;
+}
+#input_date {
+    margin-left: 12%;
+    width: 35%;
+}
+
+#name {
+    margin-left: 2%;
+    width: 35%;
+}
+
+#calculate {
+    margin-left: 48%;
+
+}
+
+#until, #is_left {
+    text-align: center;
+    color: rgb(17, 30, 105);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#date_name {
+    color: rgb(218, 93, 93);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+}
+
+#res {
+    text-align: center;
+    background: #ffdd00;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+#day, #hrs, #min, #sec {
+    border-radius: 0.05em;
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(3, 54, 163);
+}
+
+.txt {
+    font-family: 'Courier New', Courier, monospace;
+    color: red;
+    text-align: center;
+}
